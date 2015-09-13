@@ -52,9 +52,14 @@ def replace_place_notations(text):
     return re.sub(r'\$', '', text)
 
 
+def sanitize_for_xml(text):
+    """Sanitize some characters for Solr XML output."""
+    return text.replace(u'&', '&amp;').replace(r'<', '&lt;').replace(r'>', '&gt;')
+
+
 def replace_link_notations(text):
     """Replace link notations (e.g., {klama}) with anchor text (e.g., <a href=...)"""
-    return re.sub(r'\{(\w+)\}',
+    return re.sub(r'\{([\w\']+)\}',
                   a_tag('?q=\\1', '\\1'),
                   text)
 
@@ -83,11 +88,12 @@ def format_doc_record(valsi):
         eng_text_arr.append(' ')
 
     # Add definition
-    eng_text_arr.append(replace_place_notations(valsi.definition))
+    eng_text_arr.append(replace_place_notations(sanitize_for_xml(valsi.definition)))
 
     # Add notes
     if len(valsi.notes) > 0:
-        eng_text_arr.extend([' ', replace_place_notations(replace_link_notations(valsi.notes))])
+        notes = replace_place_notations(replace_link_notations(sanitize_for_xml(valsi.notes)))
+        eng_text_arr.extend([' ', notes])
 
     src_url = ('http://jbovlaste.lojban.org/lookup.pl?'
                + 'Form=lookup.pl2&amp;Database=*&amp;Query=%s' % valsi.word)

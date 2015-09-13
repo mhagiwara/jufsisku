@@ -70,6 +70,11 @@ def run_tests():
                           lambda html: 'jbovlaste:klama' in html)
     results.append(res)
 
+    # test case 3 -> searching by 'aigne' returns jbovlaste entry (added in Sept. 2015)
+    res = run_single_test('http://lojban.lilyx.net/jufsisku/?q=aigne',
+                          lambda html: 'jbovlaste:aigne' in html)
+    results.append(res)
+
     return results
 
 

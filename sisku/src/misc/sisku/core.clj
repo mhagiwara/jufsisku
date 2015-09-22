@@ -9,7 +9,7 @@
   (:use hiccup.form-helpers)
 
   (:use clojure.xml)
-  
+
   (:require [compojure.route :as route]
             [compojure.handler :as handler])
   (:require [clojure.contrib.logging :as logging])
@@ -27,8 +27,7 @@
    :footer [:hr
             [:div.footer
              [:div
-              [:a {:href "."} "home"] "&nbsp;&nbsp;"
-              [:a {:href "add"} "add sentence(s)"]]
+              [:a {:href "."} "home"] "&nbsp;&nbsp;"]
              [:div "lojbo jufsisku - Lojban sentence search - developed by "
               [:a {:href "http://lilyx.net/"} "Masato Hagiwara"]]]
             ]
@@ -112,7 +111,7 @@
        (for [i (range (max 1 (- p width))
                       (min (inc total-ps)
                            (max (+ p width) (+ 1 (max 1 (- p width)) (* width 2)))))]
-         
+
          (if (= i p)
            [:span.pg_current i]
            [:span.pg
@@ -161,7 +160,6 @@
      [:a {:href "?q=store"} "store"] ",&nbsp; "
      [:a {:href "?q=pretty little girls' school"} "pretty little girls' school"]]
     ]
-    [:p "You can " [:a {:href "add"} "add more Lojban-English sentences from here"]]
    ]
   )
 
@@ -186,106 +184,8 @@
    )
   )
 
-(defn add-page-html [params]
-  [:div#search_res
-   [:div "Fill out the form below with a Lojban sentence, its English translation, resource ID, and source."
-    [:br] "If you'd like to upload many sentences in a batch, " [:a {:href "http://lilyx.net/about-me/"} "please directly contact me."]]
-   [:hr]
-   [:form {:method "POST" :action "add"}
-    [:table
-     [:tr
-      [:td "Lojban sentence:"]
-      [:td [:input {:type "text" :size 60 :name "jbo_t" :value ""}]]
-      ]
-     [:tr
-      [:td] [:td "e.g., &quot; mi klama le zarci &quot;"]
-      ]
-     [:tr
-      [:td "English translation:"]
-      [:td [:input {:type "text" :size 60 :name "eng_t" :value ""}]]
-      ]
-     [:tr
-      [:td] [:td "e.g., &quot; I go to the store. &quot;"]
-      ]
-     [:tr
-      [:td "Source:"]
-      [:td [:input {:type "text" :size 60 :name "src" :value ""}]]
-      ]
-     [:tr
-      [:td] [:td "e.g., &quot; http://www.example.com/path &quot;" [:br]
-             "Specify the URL where the Lojban sentence (optionally with the English translation) appears."
-             "Any submittions without source cannot be included in the database because of copyright and validity issues." [:br]
-             "If you are submitting sentences from CLL, make it clear which section it appears in (e.g., " [:a {:href "http://dag.github.com/cll/1/3/"} "http://dag.github.com/cll/1/3/"] ")"]
-      ]
-     [:tr
-      [:td "Resource ID:"]
-      [:td [:input {:type "text" :size 30 :name "rid" :value ""}]]
-      ]
-     [:tr
-      [:td] [:td "e.g., &quot; CLL &quot; , &quot; jbovlaste &quot;" [:br]
-             "(Optional) Specify an unique ID corresponding to the resource where the sentence comes from." [:br]
-             "This ID will be shown on the right of search results with unique sentence IDs automatically numbered by the system." [:br]
-             "If you are submitting sentences from CLL, just write &quot; CLL &quot;"]
-      ]
-     ]
-    [:input {:type "submit" :value "Submit"}]]
-   ]
-  )
-
-(defn add-page [params]
-  (html
-   (doctype :html4)
-   [:html
-    (head-html params)
-    [:body
-     (header-html params)
-     (add-page-html params)
-     (page-parts :footer)
-     ]
-    ]
-   )
-  )
-
-(defn add-page-posted [params]
-  (with-mongo conn
-    (insert! :jufra {:eng_t (params :eng_t)
-                     :jbo_t (params :jbo_t)
-                     :src   (params :src)
-                     :rid   (params :rid)}))
-  [:div#post_confirm
-   [:p "Thank you for submitting the following sentence!"]
-   [:div#quote
-    [:div "Lojban sentence:" (params :jbo_t)]
-    [:div "English translation:" (params :eng_t)]
-    [:div "Source: " (params :src)]
-    [:div "Resource ID: " (params :rid)]
-    ]
-   [:p "After being reviewed manually, your sentence(s) will be added to the database."]
-   [:p "You can continue to add more sentence(s) using the following form."]
-   [:hr]
-   ]
-  )
-
-(defn add-page-post [params]
-  (html
-   (doctype :html4)
-   [:html
-    (head-html params)
-    [:body
-     (header-html params)
-     (add-page-posted params)
-     (add-page-html params)
-     (page-parts :footer)
-     ]
-    ]
-   )
-  )
-
-
 (defroutes main-routes
   (GET "/" {params :params} (search-page params))
-  (GET "/add" {params :params} (add-page params))
-  (POST "/add" {params :params} (add-page-post params))
   (route/resources "/")
   (route/not-found "<h1>Page not found</h1>"))
 
@@ -300,7 +200,7 @@
                     (str content-type "; charset=" charset)))
         response))))
 
-(defn -main [& args]  
+(defn -main [& args]
   (run-jetty (-> main-routes
                  (handler/site)
                  (wrap-charset "utf-8")) {:port 8080})

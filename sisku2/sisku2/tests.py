@@ -10,8 +10,8 @@ class ViewTests(unittest.TestCase):
     def tearDown(self):
         testing.tearDown()
 
-    def test_my_view(self):
-        from .views import my_view
+    def test_home_view(self):
+        from .views import home_view
         request = testing.DummyRequest()
-        info = my_view(request)
+        info = home_view(request)
         self.assertEqual(info['project'], 'sisku2')

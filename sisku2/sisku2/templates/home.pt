@@ -3,36 +3,7 @@
     <head>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
         <title>lojbo jufsisku - Lojban sentence search</title>
-        <style type="text/css">
-            body {font: 1em helvatica, arial; padding: 0; margin: 0;}
-            .header  {background-color: #333333; padding: 16px;}
-            h1       {color: #dddddd; margin: 4px;}
-            h1 a:link {color: #cccccc; text-decoration: none;}
-            h1 a:visited {color: #cccccc; text-decoration: none;}
-            h1 a:hover {color: #dddddd; text-decoration: underline;}
-            .h1sub   {font-size: 18px;}
-
-            #post_confirm {padding: 18px;}
-            #post_confirm #quote {background-color: #cccccc; padding: 8px;
-                                  font-style: italic;}
-
-            #search_box {background-color: #666666;}
-            #search_box input {margin: 8px}
-
-            #search_res {padding: 18px;}
-            #search_res td {padding: 6px;}
-            #search_res table   {width: 90%;}
-            #search_res td.text {width: 80%;}
-            #search_res td.link {width: 20%;}
-
-            .jbo_t   {color: #000000; font-family: Lucida Console, monospace;}
-            .eng_t   {color: #666666;}
-            .id      {font-size: 0.8em;}
-            .pg      {margin-left: 2px; margin-right: 2px;}
-            .pg_current {font-weight: bold; margin-left: 2px; margin-right: 2px; }
-
-            .footer  {padding: 8px;}
-        </style>
+        <link rel="stylesheet" href="static/main.css" type="text/css" />
         <script type="text/javascript">
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', 'UA-175204-10']);

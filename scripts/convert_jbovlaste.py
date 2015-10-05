@@ -12,6 +12,7 @@ Valsi = namedtuple('Valsi', ['word', 'wtype', 'definition', 'notes', 'rafsi'])
 
 DocRecord = namedtuple('DocRecord', ['id', 'jbo_text', 'eng_text', 'src'])
 
+
 def iterate_valsi(jbovlaste_root_node):
     """
     Given the root node of XML Element Tree, iterates all the valsi namedtuples
@@ -102,6 +103,7 @@ def format_doc_record(valsi):
                      jbo_text=jbo_text,
                      eng_text=''.join(eng_text_arr),
                      src=src_url)
+
 
 def print_doc_records(records):
     """Print records as Solr XML"""

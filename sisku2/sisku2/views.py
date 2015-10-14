@@ -5,7 +5,10 @@ from sisku2 import search
 def home_view(request):
     if 'q' not in request.params:
         # Home page
-        return {'project': 'sisku2'}
+        return {'home': True}
     else:
         # Search page
-        return {'project': 'query = %s' % request.params['q']}
+        query = request.params['q']
+        num_found, results = search(query)
+        return {'home': False,
+                'num_found': num_found}

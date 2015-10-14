@@ -30,13 +30,13 @@ def _solrxml2results(response_body):
 
 
 def search(query, page=1):
-    """Issue a query to solr and returns a list of search results.
+    """Issue a query to solr and returns the search results.
 
     Arguments:
         query (str): query string
         page (int):  1-base page number
     Returns:
-        list of ...
+        tuple of (number of search results found, list of search results)
     """
     assert page > 0
     start = (page - 1) * RESULTS_PER_PAGE

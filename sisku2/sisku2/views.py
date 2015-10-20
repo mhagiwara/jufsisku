@@ -18,7 +18,7 @@ def home_view(request):
         # Generate pager
         page = paginate.Page(range(num_found),
                              page=current_page, items_per_page=RESULTS_PER_PAGE,
-                             url=lambda page: '/?q=%s&p=%s' % (query, page))
+                             url=lambda page: '/jufsisku/?q=%s&p=%s' % (query, page))
         pager_html = page.pager(format='$link_first $link_previous ~3~ $link_next $link_last')
 
         return {'home': False,

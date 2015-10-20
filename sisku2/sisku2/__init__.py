@@ -40,6 +40,7 @@ def search(query, page=1):
     """
     assert page > 0
     start = (page - 1) * RESULTS_PER_PAGE
+    query = query.replace(' ', '+')
     url = ('http://localhost:8983/solr/select/?version=2.2&rows=%s&indent=on'
            '&q=jbo_t:%s+eng_t:%s&start=%s' % (RESULTS_PER_PAGE, query, query, start))
 

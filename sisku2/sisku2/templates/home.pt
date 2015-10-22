@@ -3,6 +3,9 @@
     <head>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
         <title>lojbo jufsisku - Lojban sentence search</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
         <link rel="stylesheet" href="static/main.css" type="text/css" />
         <script type="text/javascript">
             var _gaq = _gaq || [];
@@ -26,10 +29,10 @@
                     <span class="h1sub">Lojban sentence search</span>
                 </h1>
             </div>
-            <div id="search_box">
-                <form action="." method="GET">
-                    <input name="q" size="30" type="text" value="${query}" />
-                    <input type="submit" value="Search" />
+            <div id="search_box" class="navbar-collapse collapse">
+                <form class="navbar-form" action="." method="GET">
+                    <input class="form-control" name="q" size="30" type="text" value="${query}" />
+                    <input type="submit" class="btn" value="Search" />
                 </form>
             </div>
         </div>
@@ -58,7 +61,7 @@
                     </td>
                 </tr>
             </table>
-            <div class="pagenation">${structure:pager}</div>
+            <div class="pagination">${structure:pager}</div>
         </div>
         <hr>
         <div class="footer">

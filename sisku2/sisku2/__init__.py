@@ -2,7 +2,7 @@ from pyramid.config import Configurator
 from urllib2 import urlopen, URLError
 import xml.etree.ElementTree as ET
 
-RESULTS_PER_PAGE = 20
+RESULTS_PER_PAGE = 16
 
 
 def _solrxml2results(response_body):
@@ -53,6 +53,28 @@ def search(query, page=1):
         # return an empty list when an error occurs (most likely solr is not running)
         return (0, [])
 
+
+def highlight(results, query):
+    """Given search results, returns a new list of results with query highlighted.
+
+    Arguments:
+        results: search results returned by search()
+        query: query string
+
+    Returns:
+        a new list of serach results, with query highlighted by <span class="highlight">...<span>
+    """
+
+    # TODO(mhagiwara): highlight individual query words
+    highlight_field = lambda text: text.replace(query, '<span class="highlight">%s</span>' % query)
+    new_results = []
+    for result in results:
+        new_result = dict(result)
+        new_result['jbo_t'] = highlight_field(new_result['jbo_t'])
+        new_result['eng_t'] = highlight_field(new_result['eng_t'])
+        new_results.append(new_result)
+
+    return new_results
 
 def main(global_config, **settings):
     """This function returns a Pyramid WSGI application."""

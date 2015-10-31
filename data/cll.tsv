@@ -1,0 +1,104 @@
+mi klama le zarci	I go to the store.	http://lojban.github.io/cll/1/3/
+la meris.	the one/ones named Mary	http://lojban.github.io/cll/2/3/
+la djan.	the one/ones named John	http://lojban.github.io/cll/2/3/
+mi tavla do zo'e zo'e	I talk to you about something in some language.	http://lojban.github.io/cll/2/5/
+do tavla mi ta zo'e	You talk to me about that thing in a language.	http://lojban.github.io/cll/2/5/
+mi tavla zo'e tu ti	I talk to someone about that thing yonder in this language.	http://lojban.github.io/cll/2/5/
+mi tavla do	I talk to you 	http://lojban.github.io/cll/2/5/
+do tavla mi ta	You talk to me about that thing.	http://lojban.github.io/cll/2/5/
+mi cu vecnu ti ta zo'e	I sell this thing to that buyer.	http://lojban.github.io/cll/2/6/
+mi ti cu vecnu ta	I this thing do sell to that buyer.	http://lojban.github.io/cll/2/6/
+mi ti ta cu vecnu	I this thing to that buyer do sell.	http://lojban.github.io/cll/2/6/
+ta melbi	That is beautiful.	http://lojban.github.io/cll/2/6/
+melbi	Beautiful!	http://lojban.github.io/cll/2/6/
+mi tavla do ti	I talk to you about this.	http://lojban.github.io/cll/2/7/
+do se tavla mi ti	You are talked to by me about this.	http://lojban.github.io/cll/2/7/
+mi tavla do ti	I talk to you about this.	http://lojban.github.io/cll/2/7/
+ti te tavla do mi	This is talked about to you by me.	http://lojban.github.io/cll/2/7/
+sutra tavla	to talk fast	http://lojban.github.io/cll/2/9/
+sutra tavla cutci	fast-talker type of shoe 	http://lojban.github.io/cll/2/9/
+bajra cutci	runner's shoe	http://lojban.github.io/cll/2/9/
+sutra tavla	fast-talker	http://lojban.github.io/cll/2/9/
+jikca toldi	social butterfly	http://lojban.github.io/cll/2/9/
+mi sutra klama la meris.	I quickly go to Mary	http://lojban.github.io/cll/2/9/
+mi sutra se klama la meris.	Mary is quicly gone to by me.	http://lojban.github.io/cll/2/9/
+la tam. melbi tavla la meris.	Tom is a beautiful talker to Mary	http://lojban.github.io/cll/2/9/
+la meris. melbi se tavla la tam.	Mary is a beautiful audience for Tom.	http://lojban.github.io/cll/2/9/
+la tam. tavla melbi la meris.	Tom is talkerly-beautiful to Mary.	http://lojban.github.io/cll/2/9/
+la tam. se tavla melbi la meris.	Tom is audiencely-beautiful to Mary.	http://lojban.github.io/cll/2/9/
+mi tavla do le tavla ku	I talk to you about the talker	http://lojban.github.io/cll/2/10/
+mi tavla   do  le tavla	I talk to you about the talker	http://lojban.github.io/cll/2/10/
+le sutra tavla	The fast talker	http://lojban.github.io/cll/2/10/
+le sutra cu tavla	The fast one is talking	http://lojban.github.io/cll/2/10/
+le sutra se tavla	The fast listener.	http://lojban.github.io/cll/2/10/
+le sutra cu se tavla	The fast one is talked to.	http://lojban.github.io/cll/2/10/
+mi cu tavla le vecnu le blari'o	I talk to the seller about the blue-green-thing.	http://lojban.github.io/cll/2/10/
+mi klama ti zo'e zo'e ta	I go here using that means.	http://lojban.github.io/cll/2/11/
+ta blari'o	That is blue-green.	http://lojban.github.io/cll/2/11/
+ti djarspageti .i ta go'i	This is spaghetti. That (is spaghetti), too.	http://lojban.github.io/cll/2/11/
+le gerku cu melbi .i ti pluka mi	The dog is beautiful. This (the dog) pleases me.	http://lojban.github.io/cll/2/12/
+le gerku cu melbi .i di'u pluka mi	The dog is beautiful. The last sentence pleases me.	http://lojban.github.io/cll/2/12/
+le gerku cu melbi .i la'e di'u pluka mi	This dog is beautiful. This (the meaning of the last sentence) pleases me.	http://lojban.github.io/cll/2/12/
+le mi gerku cu sutra	My dog is fast.	http://lojban.github.io/cll/2/13/
+doi djan.	Oh, John, I'm talking to you.	http://lojban.github.io/cll/2/14/
+coi. djan.	Hello, John.	http://lojban.github.io/cll/2/14/
+co'o. djan.	Good-bye, John.	http://lojban.github.io/cll/2/14/
+do tavla	You are-talking.	http://lojban.github.io/cll/2/14/
+ko tavla	Talk!	http://lojban.github.io/cll/2/14/
+ko sutra	Be fast!	http://lojban.github.io/cll/2/14/
+mi tavla ko	Let me talk to you.	http://lojban.github.io/cll/2/14/
+ko kurji ko	Take care of yourself.	http://lojban.github.io/cll/2/14/
+ko ko kurji	Take care of yourself.	http://lojban.github.io/cll/2/14/
+ma tavla do mi .i la djan.	Who is talking to you about me? John (is talking to you about me).	http://lojban.github.io/cll/2/15/
+do tavla mi	You talk to what/whom?	http://lojban.github.io/cll/2/15/
+ma tavla ma	What/who talks to what/whom?	http://lojban.github.io/cll/2/15/
+do mo	You are-what/do-what?	http://lojban.github.io/cll/2/15/
+mi melbi	I am beautiful	http://lojban.github.io/cll/2/15/
+mi tavla	I talk	http://lojban.github.io/cll/2/15/
+xu do tavla mi	Are you talking to me?	http://lojban.github.io/cll/2/15/
+xu do kanro .i mi kanro	Are you healthy? I am healthy.	http://lojban.github.io/cll/2/15/
+xu do kanro .i go'i	Are you healthy? I am healthy.	http://lojban.github.io/cll/2/15/
+xu do kanro .i le tavla cu kanro	Are you healthy? The talker is healthy.	http://lojban.github.io/cll/2/15/
+xu do kanro .i le tavla cu go'i	Are you healthy? The talker is healthy.	http://lojban.github.io/cll/2/15/
+.ie mi klama	Yep! I'll go.	http://lojban.github.io/cll/2/16/
+.ei mi klama	I should go.	http://lojban.github.io/cll/2/16/
+mi klama le melbi .ui	I go to the beautiful-thing, which makes me feel happy.	http://lojban.github.io/cll/2/16/
+mi klama .i do stali	I go. You stay.	http://lojban.github.io/cll/2/16/
+mi klama .i ji'a do stali	I go. In addition, you stay.	http://lojban.github.io/cll/2/16/
+mi klama .i ku'i do stali	I go. However, you stay.	http://lojban.github.io/cll/2/16/
+pe'i do melbi	I opine! You are beautiful.	http://lojban.github.io/cll/2/16/
+za'a do melbi	I directly observe! You are beautiful.	http://lojban.github.io/cll/2/16/
+la djan. klama le zarci	John goes to the store.	http://lojban.github.io/cll/2/17/
+la djan. pu klama le zarci	John went to the store.	http://lojban.github.io/cll/2/17/
+la djan. ca klama le zarci	John goes to the store.	http://lojban.github.io/cll/2/17/
+do vu vecnu zo'e	You yonder sell something unspecified.	http://lojban.github.io/cll/2/17/
+le pu bajra cu tavla	The former runner talks.	http://lojban.github.io/cll/2/17/
+le vi bajra cu tavla	This runner talks.	http://lojban.github.io/cll/2/17/
+le vi tavla cu ba klama	This talker will go.	http://lojban.github.io/cll/2/17/
+skami plino	computer user	http://lojban.github.io/cll/4/5/
+barda bloti	ship	http://lojban.github.io/cll/4/5/
+patfu mamta	paternal grandmother	http://lojban.github.io/cll/4/5/
+mamta patfu	maternal grandfather	http://lojban.github.io/cll/4/5/
+sampli	user of computers	http://lojban.github.io/cll/4/5/
+bralo'i	ship	http://lojban.github.io/cll/4/5/
+mampa'u	maternal grandfather	http://lojban.github.io/cll/4/5/
+soirsai	field rations	http://lojban.github.io/cll/4/5/
+mamtypatfu	maternal grandfather	http://lojban.github.io/cll/4/6/
+lerfyliste	list of letters	http://lojban.github.io/cll/4/6/
+nancyprali	annual profit	http://lojban.github.io/cll/4/6/
+prunyplipe	elastic leap (spring)	http://lojban.github.io/cll/4/6/
+vancysanmi	supper	http://lojban.github.io/cll/4/6/
+cumfri	possible experience	http://lojban.github.io/cll/4/6/
+klezba	category make	http://lojban.github.io/cll/4/6/
+kixta'a	cry-out talk	http://lojban.github.io/cll/4/6/
+sniju'o	sign know	http://lojban.github.io/cll/4/6/
+mampa'u	maternal grandfather	http://lojban.github.io/cll/4/6/
+lerste	list of letters	http://lojban.github.io/cll/4/6/
+xy. zei kantu	X ray	http://lojban.github.io/cll/4/6/
+kulnr,farsi zei lolgai	Persian rug	http://lojban.github.io/cll/4/6/
+na'e zei .a zei na'e zei by. Livgyterbilma	non-A, non-B hepatitis	http://lojban.github.io/cll/4/6/
+.cerman. zei jamkarce	Sherman tank	http://lojban.github.io/cll/4/6/
+cidj,r,spageti 	spaghetti	http://lojban.github.io/cll/4/7/
+tric,r,xaceru 	Acer (the scientific name of maple trees)	http://lojban.github.io/cll/4/7/
+cirl,r,bri	brie (cheese)	http://lojban.github.io/cll/4/7/
+lerf,r,djamo 	Jamo (Korean Hangul letters)	http://lojban.github.io/cll/4/7/

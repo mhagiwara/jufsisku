@@ -2,7 +2,7 @@
 <doc>
 <field name="id">Introduction_to_Lojban:0</field>
 <field name="jbo_t">mi ca'o tavla do lo pa skina</field>
-<field name="eng_t">I'm taking to you about a movie.</field>
+<field name="eng_t">I'm talking to you about a movie.</field>
 <field name="src_t">https://mw.lojban.org/images/d/d1/Lojban._How_to_quickly_create_sentences.pdf</field>
 </doc>
 <doc>
@@ -44,7 +44,7 @@
 <doc>
 <field name="id">Introduction_to_Lojban:7</field>
 <field name="jbo_t">vanci coi la alis</field>
-<field name="eng_t">Good evening, Alis!</field>
+<field name="eng_t">Good evening, Alice!</field>
 <field name="src_t">https://mw.lojban.org/images/d/d1/Lojban._How_to_quickly_create_sentences.pdf</field>
 </doc>
 <doc>

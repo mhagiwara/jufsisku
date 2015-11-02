@@ -1,3 +1,4 @@
+import re
 from pyramid.config import Configurator
 from urllib2 import urlopen, URLError
 import xml.etree.ElementTree as ET
@@ -65,8 +66,18 @@ def highlight(results, query):
         a new list of serach results, with query highlighted by <span class="highlight">...<span>
     """
 
-    # TODO(mhagiwara): highlight individual query words
-    highlight_field = lambda text: text.replace(query, '<span class="highlight">%s</span>' % query)
+    def highlight_field(text):
+        """Helper method to highlight words in query for a single field"""
+        # Add dummy whitespace
+        # This is necessary to avoid accidentally replacing substrings
+        field = ' ' + text + ' '
+        punc_re = r'[ \.,\?\!/\"\(\)\-]'
+        for word in query.split(' '):
+            field = re.sub(r'(%s)%s(%s)' % (punc_re, word, punc_re),
+                           '\\1<span class="highlight">%s</span>\\2' % word,
+                           field)
+        return field[1:-1]
+
     new_results = []
     for result in results:
         new_result = dict(result)
